@@ -3,10 +3,10 @@ from scraper import europe_prices
 
 
 def init_db():
-    # creating instance folder if does not exist
     if not os.path.exists("instance"):
         os.makedir("instance")
 
+    # initializing database
     open("./instance/gasprices.db", "w+")
     connection = sqlite3.connect("./instance/gasprices.db")
     cursor = connection.cursor()
