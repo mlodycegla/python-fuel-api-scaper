@@ -1,1 +1,3 @@
-# python-fuel-api-scaper
+# python-fuel-api-scraper
+
+todo - update readme
