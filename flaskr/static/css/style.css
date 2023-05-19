@@ -40,3 +40,7 @@ body {
   transform: scale(110%);
   border: var(--accentcolor) 5px solid;
 }
+
+#americanprices {
+  cursor: not-allowed;
+}
