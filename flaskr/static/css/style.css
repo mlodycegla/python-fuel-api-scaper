@@ -3,3 +3,40 @@
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --primarycolor: #025464;
+  --secondarycolor: #e57c23;
+  --accentcolor: #f8f1f1;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--primarycolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  width: 225px;
+  background-color: var(--secondarycolor);
+  color: var(--accentcolor);
+  margin: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: center;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.tile:hover {
+  transform: scale(110%);
+  border: var(--accentcolor) 5px solid;
+}
