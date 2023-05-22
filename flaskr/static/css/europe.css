@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primarycolor: #025464;
+  --secondarycolor: #e57c23;
+  --accentcolor: #f8f1f1;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--primarycolor);
+  color: var(--accentcolor);
+}
