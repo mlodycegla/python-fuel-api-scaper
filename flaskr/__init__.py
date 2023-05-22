@@ -25,7 +25,7 @@ def europeprices():
     return db.get_europeprices_db(range, offset)
 
 
-# activates every day at 2am - scrapes prices from website and updates the db in "db" file
+# activates every day at 2am - scrapes prices from website and updates the database within "db" file
 def updatedb():
     schedule.every().day.at("02:00").do(db.init_db)
     while True:
