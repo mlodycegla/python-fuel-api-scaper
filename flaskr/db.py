@@ -14,7 +14,7 @@ def init_db():
     cursor = connection.cursor()
 
     # opening schematic file to create a table
-    with open("schema.sql") as db_schematic:
+    with open(os.path.abspath("../flaskr/schema.sql")) as db_schematic:
         cursor.executescript(db_schematic.read())
 
     europe_gas_prices = europe_prices()
