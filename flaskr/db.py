@@ -24,8 +24,8 @@ def init_db():
                 f"INSERT INTO europeprices (COUNTRY, GASOLINE, DIESEL, LPG) values ('{country_prices['name']}', '{country_prices['95']}', '{country_prices['diesel']}', '{country_prices['lpg']}')"
             )
         connection.commit()
-    except Exception as e:
-        print(f"An error has occured: {e}")
+    except Exception as error:
+        print(f"An error has occured: {error}")
 
 
 def get_europeprices_db(range=10, offset=0):
