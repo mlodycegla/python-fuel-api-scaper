@@ -1,6 +1,11 @@
 from flask import Flask, render_template, request
-import db, schedule, time
 from multiprocessing import Process, Value
+import schedule
+import time
+import sys
+
+sys.path.append("../flaskr")
+import db
 
 app = Flask(
     __name__, static_url_path="", static_folder="static", template_folder="templates"
